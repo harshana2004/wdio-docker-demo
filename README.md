@@ -1,5 +1,5 @@
-WebdriverIO-Cucumber Snippet 
-============================
+WebdriverIO-Docker tutorial with jenkins
+========================================
 WebdriverIO tests with Cucumber bring true BDD experience to the stakeholders fledge with JavaScript. Project repositary is explains sample application usage with simple design pattens to fullfill business case.
 
 ### Prequisites
