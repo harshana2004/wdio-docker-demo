@@ -5,7 +5,7 @@ pipeline {
   stage('Build App') {
       steps {
         script {
-                sh "sudo chown root:jenkins /run/docker.sock"
+                sh "sudo chmod 666 var/run/docker.sock"
                 sh "docker build . -t 'e2e-tests'"
               }
       }
