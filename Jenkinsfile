@@ -37,7 +37,7 @@ post {
                 jdk: '', 
                 properties: [], 
                 reportBuildPolicy: 'ALWAYS', 
-                results: [[path: 'e2e/allure-results']] ])
+                results: [[path: 'allure-results']] ])
       }
    }
 }
