@@ -2,7 +2,7 @@ FROM ubuntu:18.04
 
 # Install machine dependencies
 RUN apt update \
-  && apt install -y unzip curl wget git make build-essential g++ openjdk-8-jdk \
+  && apt install -y apt-transport-https unzip curl wget git make build-essential g++ openjdk-8-jdk \
   && curl -sL https://deb.nodesource.com/setup_8.x | bash - \
   && apt update \
   && apt-get install -y nodejs \
