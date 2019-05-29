@@ -13,7 +13,7 @@ pipeline {
       steps {
         script {
               sh "mkdir -p allure-results"
-              sh "docker run --rm -v 'e2e-tests'"
+              sh "docker run -v 'e2e-tests'"
          }
       }
     }
