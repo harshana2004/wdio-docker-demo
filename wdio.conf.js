@@ -49,13 +49,13 @@ exports.config = {
         'chromeOptions': {
             args: ['--headless', '--no-sandbox']
         }
-    },
-    {
-        maxInstances: 5,
-        browserName: 'firefox',
-        "moz:firefoxOptions": {
-            args: ['-headless']
-        }
+    // },
+    // {
+    //     maxInstances: 5,
+    //     browserName: 'firefox',
+    //     "moz:firefoxOptions": {
+    //         args: ['-headless']
+    //     }
     }],
     //
     // ===================
