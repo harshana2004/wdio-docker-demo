@@ -7,7 +7,7 @@ pipeline {
         script {
                 sh "docker build . -t 'e2e-tests'"
               }
-      }
+         }      
     }
   stage('Execute Test') {
       steps {
@@ -17,28 +17,5 @@ pipeline {
          }
       }
     }
-  stage('Reports') {
-      steps {
-        script {
-            allure([
-                    includeProperties: false,
-                    jdk: '',
-                    properties: [],
-                    reportBuildPolicy: 'ALWAYS',
-                    results: [[path: 'allure-results']]
-              ])
-          }
-        }
-      }  
-  } // End stages
-post {
-    always {
-      allure([ includeProperties: false,
-                jdk: '', 
-                properties: [], 
-                reportBuildPolicy: 'ALWAYS', 
-                results: [[path: 'allure-results']] ])
-      }
-   }
+  }
 }
-
